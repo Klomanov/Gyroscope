@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqrpbcqnunmdx"]
+
+[ext_resource type="ArrayMesh" uid="uid://c1j4gyhyep1bk" path="res://model.obj" id="1_32bo7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0vq2"]
+metallic = 1.0
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.25, -0.433013, 7.57103e-08, -0.866025, 0.5, -0.5, 0.433013, 0.75, 0.109039, 26.639, 17.5788)
+shadow_enabled = true
+directional_shadow_split_1 = 0.08
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.249697, 22.0871, 28.376)
+
+[node name="Gyroscope" type="Gyroscope" parent="."]
+amplitude = 0.03
+transform = Transform3D(-0.0522197, 0.00920755, 0.0848454, 0.0173637, 0.098481, -5.56944e-08, -0.0835577, 0.0147324, -0.0530247, 0, 0, 0)
+mesh = ExtResource("1_32bo7")
+surface_material_override/0 = SubResource("StandardMaterial3D_k0vq2")
+metadata/_edit_lock_ = true

@@ -1,0 +1,1 @@
+C:\Users\1204k\Godot c++\x64\Debug\gyroscope.dll
